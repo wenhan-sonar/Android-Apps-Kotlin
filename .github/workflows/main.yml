@@ -39,4 +39,4 @@ jobs:
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL_AZURE }}
         run: |
           chmod +x gradlew
-          ./gradlew build sonar --debug
+          ./gradlew build sonar --info
