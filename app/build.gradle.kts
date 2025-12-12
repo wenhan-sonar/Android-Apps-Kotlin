@@ -1,6 +1,6 @@
 plugins {
     id("com.android.application") version "7.1.1"
-    id "org.sonarqube" version "6.3.1.5724"
+    id("org.sonarqube") version "6.3.1.5724"
 }
 
 repositories {
@@ -37,7 +37,7 @@ dependencies {
 
 sonar {
   properties {
-    property "sonar.projectKey", "wenhan-sonar_Android-Apps-Kotlin_f045df2e-f030-4826-a80d-47d1aaabefbe"
-    property "sonar.projectName", "Android-Apps-Kotlin"
+    property("sonar.projectKey", "wenhan-sonar_Android-Apps-Kotlin_f045df2e-f030-4826-a80d-47d1aaabefbe")
+    property("sonar.projectName", "Android-Apps-Kotlin")
   }
 }

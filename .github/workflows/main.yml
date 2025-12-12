@@ -37,4 +37,6 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN_AZURE }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL_AZURE }}
-        run: ./gradlew build sonar --debug
+        run: |
+          chmod +x gradlew
+          ./gradlew build sonar --debug
