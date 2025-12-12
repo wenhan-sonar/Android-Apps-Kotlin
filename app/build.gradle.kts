@@ -1,5 +1,6 @@
 plugins {
-    id("com.android.application") version "7.1.1"
+    id("com.android.application") version "8.1.0"
+    id("kotlin-android") version "1.8.0" // Ensure Kotlin is also reasonably new
     id("org.sonarqube") version "6.3.1.5724"
 }
 
@@ -9,6 +10,10 @@ repositories {
 }
 
 android {
+    // ADD THIS LINE (use your app's package name, e.g., "com.example.myapp")
+    namespace = "com.wenhan.android.apps" 
+    
+    compileSdk = 34 // Recommended to update this as well
     compileSdkVersion(30)
     defaultConfig {
         applicationId = "org.gradle.samples"
